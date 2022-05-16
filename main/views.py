@@ -325,10 +325,3 @@ def result(request):
         "ocr_data": ocr_data,
     }
     return render(request, "result.html", data)
-
-
-git init
-git remote add origin https://github.com/AmineSlimane/Automatic-System-for-bank-checks-verification.git
-git branch -M main
-git add .
-git commit -m "test"
