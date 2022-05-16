@@ -117,6 +117,7 @@ def ocr(image_path):
         content2 = encoded_image.tobytes()
 
         textractclient = boto3.client("textract", aws_access_key_id="#",aws_secret_access_key="#",region_name="us-east-2")
+
         response = textractclient.detect_document_text(
             Document={
                 'Bytes': content2
